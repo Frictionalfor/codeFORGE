@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const firebaseAuth_1 = require("../middleware/firebaseAuth");
+const enhancedAssignmentController_1 = require("../controllers/enhancedAssignmentController");
+const router = (0, express_1.Router)();
+router.use(firebaseAuth_1.requireAuthWithUser);
+router.get('/assignments/:assignmentId/submission-status', enhancedAssignmentController_1.getAssignmentSubmissionStatus);
+router.get('/:classId/assignments', enhancedAssignmentController_1.getClassAssignments);
+router.post('/:classId/assignments', enhancedAssignmentController_1.createAssignmentWithTestCases);
+router.put('/:classId/assignments/:assignmentId', enhancedAssignmentController_1.updateAssignment);
+router.delete('/:classId/assignments/:assignmentId', enhancedAssignmentController_1.deleteAssignment);
+router.get('/:classId/assignments/:assignmentId/test-cases', enhancedAssignmentController_1.getAssignmentTestCases);
+router.post('/:classId/assignments/:assignmentId/submit', enhancedAssignmentController_1.submitAssignmentCode);
+router.get('/:classId/assignments/:assignmentId/submission', enhancedAssignmentController_1.getStudentSubmission);
+router.get('/:classId/assignments/:assignmentId/submission-history', enhancedAssignmentController_1.getSubmissionHistory);
+router.get('/:classId/assignments/:assignmentId/submissions', enhancedAssignmentController_1.getAssignmentSubmissions);
+router.get('/:classId/assignments/:assignmentId/submissions/:submissionId', enhancedAssignmentController_1.getSubmissionDetails);
+exports.default = router;
+//# sourceMappingURL=enhancedAssignmentRoutes.js.map
