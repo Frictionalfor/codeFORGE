@@ -5,25 +5,25 @@ import RegisterForm from '../../components/forms/RegisterForm'
 
 const RegisterPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-6 py-12 relative overflow-hidden">
+    <div className="min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-56 sm:w-80 h-56 sm:h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
       </div>
 
       <div className="max-w-md w-full relative z-10">
         {/* Header */}
-        <div className="text-center mb-8 no-select">
-          <Link to="/" className="inline-flex items-center space-x-3 mb-6 hover-lift focus-ring">
-            <div className="w-12 h-12 flex items-center justify-center">
+        <div className="text-center mb-6 sm:mb-8 no-select">
+          <Link to="/" className="inline-flex items-center space-x-2 sm:space-x-3 mb-4 sm:mb-6 hover-lift focus-ring">
+            <div className="w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center">
               <img 
                 src="/logo.png" 
                 alt="CodeForge Logo" 
-                className="w-12 h-12 object-contain logo-hover"
+                className="w-10 sm:w-12 h-10 sm:h-12 object-contain logo-hover"
                 onError={(e) => {
                   // Fallback to icon if logo fails to load
                   const target = e.currentTarget as HTMLImageElement;

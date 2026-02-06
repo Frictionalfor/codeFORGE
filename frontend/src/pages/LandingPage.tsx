@@ -16,12 +16,14 @@ import {
   Layers,
   BarChart3,
   Clock,
-  Globe
+  Globe,
+  Menu
 } from 'lucide-react'
 
 const LandingPage: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
@@ -51,13 +53,13 @@ const LandingPage: React.FC = () => {
       {/* Main Content Flow - This allows sticky to work */}
       <div className="relative z-10">
         {/* Floating Navbar - Properly positioned for sticky */}
-        <div className="sticky top-6 z-50 px-6 mb-8">
+        <div className="sticky top-4 md:top-6 z-50 px-4 md:px-6 mb-8">
           <nav className={`max-w-6xl mx-auto transition-all duration-300 ${
             isScrolled 
-              ? 'bg-slate-900/40 backdrop-blur-xl border border-white/20 rounded-full shadow-2xl shadow-blue-500/10' 
+              ? 'bg-slate-900/40 backdrop-blur-xl border border-white/20 rounded-2xl md:rounded-full shadow-2xl shadow-blue-500/10' 
               : 'bg-transparent'
           }`}>
-            <div className="flex items-center justify-between px-8 py-5">
+            <div className="flex items-center justify-between px-4 md:px-8 py-4 md:py-5">
               {/* Logo - Left */}
               <div className="flex items-center space-x-2">
                 <div className="w-6 h-6 flex items-center justify-center">
@@ -75,12 +77,12 @@ const LandingPage: React.FC = () => {
                     <Code2 className="w-4 h-4 text-black" />
                   </div>
                 </div>
-                <span className="text-lg font-semibold text-white">
+                <span className="text-base md:text-lg font-semibold text-white">
                   CodeForge
                 </span>
               </div>
               
-              {/* Center Navigation */}
+              {/* Center Navigation - Desktop Only */}
               <div className="hidden md:flex items-center space-x-8">
                 <a 
                   href="#features" 
@@ -102,8 +104,8 @@ const LandingPage: React.FC = () => {
                 </a>
               </div>
               
-              {/* Actions - Right */}
-              <div className="flex items-center space-x-4">
+              {/* Actions - Right - Desktop */}
+              <div className="hidden md:flex items-center space-x-4">
                 <Link
                   to="/login"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
@@ -117,15 +119,65 @@ const LandingPage: React.FC = () => {
                   Get started
                 </Link>
               </div>
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden text-white p-2"
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
             </div>
+
+            {/* Mobile Menu */}
+            {isMobileMenuOpen && (
+              <div className="md:hidden border-t border-white/10 mt-2 py-4 px-4 space-y-4">
+                <a 
+                  href="#features" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-white/80 hover:text-white transition-colors duration-200 py-2"
+                >
+                  Features
+                </a>
+                <a 
+                  href="#how-it-works" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-white/80 hover:text-white transition-colors duration-200 py-2"
+                >
+                  How it works
+                </a>
+                <a 
+                  href="#contact" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-white/80 hover:text-white transition-colors duration-200 py-2"
+                >
+                  Contact
+                </a>
+                <div className="pt-4 border-t border-white/10 space-y-3">
+                  <Link
+                    to="/login"
+                    className="block text-center text-white/80 hover:text-white transition-colors duration-200 py-2"
+                  >
+                    Sign in
+                  </Link>
+                  <Link
+                    to="/register"
+                    className="block text-center bg-white text-black px-4 py-2 rounded-full font-medium hover:bg-white/90 transition-colors duration-200"
+                  >
+                    Get started
+                  </Link>
+                </div>
+              </div>
+            )}
           </nav>
         </div>
 
         {/* Hero Section */}
-        <section className="px-6 pb-32">
+        <section className="px-4 md:px-6 pb-20 md:pb-32">
           <div className="max-w-7xl mx-auto">
             <div className={`text-center max-w-5xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-8 leading-tight px-4">
                 <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
                   Code Education
                 </span>
@@ -135,16 +187,16 @@ const LandingPage: React.FC = () => {
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
                 The ultimate platform for coding assignments and education. 
-                <br />
+                <br className="hidden sm:block" />
                 <span className="text-blue-400">Teachers create.</span> <span className="text-purple-400">Students code.</span> <span className="text-cyan-400">Everyone learns.</span>
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-12 md:mb-16 px-4">
                 <Link
                   to="/register"
-                  className="group relative bg-gradient-to-r from-blue-500 to-purple-600 text-white px-10 py-5 rounded-2xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25"
+                  className="group relative bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25"
                 >
                   <span className="relative z-10 flex items-center justify-center">
                     Start Creating
