@@ -1,4 +1,4 @@
-# 🚀 CodeForge - Professional Coding Classroom Platform
+# CodeForge - Professional Coding Classroom Platform
 
 <div align="center">
 
@@ -10,13 +10,13 @@
 
 *Empowering educators and students with professional-grade programming tools*
 
-[🌐 Live Demo](https://code-forge-frontend-tutc.vercel.app) • [📚 Documentation](#-documentation) • [🚀 Quick Start](#-quick-start)
+[Live Demo](https://code-forge-frontend-tutc.vercel.app) • [Documentation](#documentation) • [Quick Start](#quick-start)
 
 </div>
 
 ---
 
-## ✨ What is CodeForge?
+## What is CodeForge?
 
 CodeForge is a comprehensive educational platform that revolutionizes programming education by combining modern development environments with classroom management tools. Built with Firebase Authentication, real-time dashboards, and professional-grade security.
 
@@ -24,62 +24,62 @@ CodeForge is a comprehensive educational platform that revolutionizes programmin
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 💻 **Advanced Code Editor**
-- 🔥 **Monaco Editor** - Full VS Code experience in browser
-- 🌐 **Multi-language Support** - C, C++, Python, JavaScript
-- ⚡ **Real-time Execution** - Instant code compilation & testing
-- 📊 **Live Results** - Immediate test case feedback
+### Advanced Code Editor
+- **Monaco Editor** - Full VS Code experience in browser
+- **Multi-language Support** - C, C++, Python, JavaScript
+- **Real-time Execution** - Instant code compilation & testing
+- **Live Results** - Immediate test case feedback
 
-### 🎓 **Classroom Management**
-- 📝 **Assignment Creation** - Custom coding challenges with test cases
-- 👥 **Class Organization** - Manage students and courses
-- 📊 **Real-time Progress** - Live assignment completion tracking
-- 🔍 **Submission Review** - Detailed code analysis & grading
-- 📈 **Performance Analytics** - Comprehensive learning insights
+### Classroom Management
+- **Assignment Creation** - Custom coding challenges with test cases
+- **Class Organization** - Manage students and courses
+- **Real-time Progress** - Live assignment completion tracking
+- **Submission Review** - Detailed code analysis & grading
+- **Performance Analytics** - Comprehensive learning insights
 
-### 🔥 **Firebase-Powered**
-- 🚀 **Google Sign-in** - One-click authentication
-- ⚡ **Real-time Updates** - Live dashboard synchronization
-- 🔐 **Secure Authentication** - Firebase Admin SDK
-- 📱 **Cross-device Sync** - Access from anywhere
-- 🛡️ **Enterprise Security** - Google-grade infrastructure
+### Firebase-Powered
+- **Google Sign-in** - One-click authentication
+- **Real-time Updates** - Live dashboard synchronization
+- **Secure Authentication** - Firebase Admin SDK
+- **Cross-device Sync** - Access from anywhere
+- **Enterprise Security** - Google-grade infrastructure
 
-### 📱 **Mobile Responsive**
-- 📱 **Mobile-First Design** - Works perfectly on phones and tablets
-- 🍔 **Hamburger Menu** - Clean mobile navigation
-- 👆 **Touch-Friendly** - Optimized for touch interactions
-- 🎨 **Adaptive Layouts** - Beautiful on all screen sizes
+### Mobile Responsive
+- **Mobile-First Design** - Works perfectly on phones and tablets
+- **Hamburger Menu** - Clean mobile navigation
+- **Touch-Friendly** - Optimized for touch interactions
+- **Adaptive Layouts** - Beautiful on all screen sizes
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 **Frontend:**
-- ⚛️ React 18 + TypeScript
-- 🎨 Tailwind CSS
-- 🔧 Vite + Monaco Editor
-- 🔥 Firebase SDK v9
+- React 18 + TypeScript
+- Tailwind CSS
+- Vite + Monaco Editor
+- Firebase SDK v9
 
 **Backend:**
-- 🟢 Node.js + Express.js
-- 📝 TypeScript + Sequelize ORM
-- 🔥 Firebase Admin SDK
-- 🔒 JWT Authentication
+- Node.js + Express.js
+- TypeScript + Sequelize ORM
+- Firebase Admin SDK
+- JWT Authentication
 
 **Database:**
-- 🗄️ SQLite (Development)
-- 🐘 PostgreSQL (Production)
+- SQLite (Development)
+- PostgreSQL (Production)
 
 **Hosting:**
-- 🚀 Railway (Backend)
-- ⚡ Vercel (Frontend)
-- 🔥 Firebase (Authentication)
+- Railway (Backend)
+- Vercel (Frontend)
+- Firebase (Authentication)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+
@@ -108,7 +108,7 @@ npm run dev
 
 ---
 
-## 🌐 Production Deployment
+## Production Deployment
 
 ### Live URLs
 - **Frontend**: https://code-forge-frontend-tutc.vercel.app
@@ -148,15 +148,15 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 | Document | Description |
 |----------|-------------|
-| [🔥 Firebase Setup](./FIREBASE_SETUP_GUIDE.md) | Complete Firebase configuration |
-| [🚀 Deployment Guide](./DEPLOYMENT_GUIDE.md) | Production deployment steps |
-| [📖 Technical Docs](./TECHNICAL_DOCUMENTATION.md) | Implementation details |
-| [🗄️ Database Schema](./DATABASE_SCHEMA.md) | Database structure |
-| [🔒 Security Policy](./SECURITY.md) | Security guidelines |
+| [Firebase Setup](./FIREBASE_SETUP_GUIDE.md) | Complete Firebase configuration |
+| [Deployment Guide](./DEPLOYMENT_GUIDE.md) | Production deployment steps |
+| [Technical Docs](./TECHNICAL_DOCUMENTATION.md) | Implementation details |
+| [Database Schema](./DATABASE_SCHEMA.md) | Database structure |
+| [Security Policy](./SECURITY.md) | Security guidelines |
 
 ### Quick Reference Files
 - `RAILWAY_ENV_VARIABLES.txt` - Backend environment variables
@@ -165,16 +165,16 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
-### 👨‍🏫 For Educators
+### For Educators
 - Create programming assignments with automated testing
 - Track student progress in real-time
 - Review and grade code submissions
 - Manage multiple classes and courses
 - Generate performance analytics
 
-### 👨‍🎓 For Students
+### For Students
 - Access assignments from any device
 - Write and test code in browser
 - Get instant feedback on submissions
@@ -183,7 +183,7 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 **Firebase Google Sign-in:**
 - Use any Google account to sign in
@@ -197,7 +197,7 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ---
 
-## 🎨 Features Showcase
+## Features Showcase
 
 ### Real-time Dashboard
 - Live assignment completion tracking
@@ -221,7 +221,7 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please follow these steps:
 
@@ -242,7 +242,7 @@ npm run build       # Build for production
 
 ---
 
-## 🌐 Connect
+## Connect
 
 <div align="center">
 
@@ -255,15 +255,15 @@ npm run build       # Build for production
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the CodeForge Educational Platform License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- Built with ❤️ for the programming education community
+- Built with love for the programming education community
 - Powered by Firebase for real-time collaboration
 - Inspired by the need for better coding education tools
 - Thanks to all contributors and educators
@@ -272,14 +272,14 @@ This project is licensed under the CodeForge Educational Platform License - see 
 
 <div align="center">
 
-**🚀 Ready to transform your coding education?**
+**Ready to transform your coding education?**
 
-[Get Started](#-quick-start) • [View Live Demo](https://code-forge-frontend-tutc.vercel.app) • [Deploy Now](#-production-deployment)
+[Get Started](#quick-start) • [View Live Demo](https://code-forge-frontend-tutc.vercel.app) • [Deploy Now](#production-deployment)
 
 *CodeForge - Empowering the next generation of programmers*
 
-**⭐ Star this repository if you find it helpful! ⭐**
+**Star this repository if you find it helpful!**
 
-Made with 💙 by [Swanand](https://github.com/Frictionalfor)
+Made with passion by [Swanand](https://github.com/Frictionalfor)
 
 </div>
