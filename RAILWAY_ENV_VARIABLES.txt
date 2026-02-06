@@ -1,0 +1,71 @@
+# ========================================
+# RAILWAY BACKEND ENVIRONMENT VARIABLES
+# ========================================
+# Copy these variables to Railway Dashboard:
+# 1. Go to your Railway project
+# 2. Click on your service
+# 3. Go to "Variables" tab
+# 4. Click "Raw Editor" button
+# 5. Paste all variables below
+# ========================================
+
+# NOTE: DATABASE_URL is automatically provided by Railway PostgreSQL
+# You don't need to add it manually - Railway injects it automatically!
+
+NODE_ENV=production
+PORT=3001
+DEV_MODE=false
+
+# CORS - Update this with your actual Vercel URL after deployment
+CORS_ORIGIN=https://your-vercel-app.vercel.app
+
+# Firebase Admin SDK Configuration
+FIREBASE_PROJECT_ID=codeforge-5e078
+FIREBASE_CLIENT_EMAIL=firebase-adminsdk-fbsvc@codeforge-5e078.iam.gserviceaccount.com
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCIkzB073c9AZRt
+gqMZ3887pAhNDLa/jyqxEuUHCc4jOij5HC9s/KItR7tP6WHi88/ZpfvLQFtrvfeH
+Css6vBGCFPS5PcpHiC/eni7hb7l014JSq0Aki+hbKE3RgsjwNDDDuWp67CSYxyXZ
+64FeLNPy5WBdK0oVssrvgdfQKeU17sU6ZeOQx9Db4zyEmXJL4LtgapilnSMNXh6y
+KLEsYSyzpYSiO5vZrFSMMA9Nl+FlzO8kTsebbMhywCn3nZwEx3DRhn/q6uS7GOf+
+oDFP2D/oHAhcJMnFUivxIyh0gF1/73Kh8Sa7Q3Ae86v0DrGdpeSMI3oxiwBMMDTV
+SSqR4SnXAgMBAAECggEANJddVwIpi9vyYJMoJFwLTH+XVLg7HRvPyD0q5WFwuB76
+zSZ92r2T49TV++k2cPMLDFg+1B81tREDYsSUysrGAS35qOVy4cW/DT4jdlsT8rrU
+K+pW+lvHv2aPRMjUgK7QQmZBaxFI7G3vlPF7sRyZB1UtnOMBFcbyH3WD+dxQL8pw
+tExMvTMOoG1KtDfz4StZOWIwjM6mG4Q7aEP3FrZs+dg2MyGONgamywFeEHlghYq2
+O52s8NF0Rs6U7X4GM+dAMVsFWqYaODSU6V7eEJRkpXFZVYF3+VlBu2ZAw/PYjG8r
+46/hJcfngZh81HUPL+C8lU6U/P2Tg+rcGo+Eqi+HQQKBgQC8dcmnQL/9ckrvWSqf
+7fp1ljfiogqze9FQ0psY9OX6P/VKAfc+gys4P7NZ6sFiKKbQImIOTDHAViq4tMMF
+++YUmY2ZpvDfWQE+slwCBOx+PQyaNI7YBJIsZRlOEnAOkn3IMEq9FdbXCuJOY7QR
+aRdEsKsKsygxQOnOlmvO38OHlwKBgQC5hTcQTDK8o6e4E9tH4lz0MFgnPy5yaD7A
+bWdOsi2k3R+lRZtxT4lqT1YDbkvRZCPllCwWiIPZhcN+dTGyLhgcmBrqVi45PILC
+yQkBTNVgYN81MoSWjghUWDKRzjKxBxSxQdF0nDpltDOgsptBz4NdbbsHM72MECKg
+UN/KXC23wQKBgHrd9C11unXbWN147aA8/+g/monICWAA3nNqCzIXIASqRBoO9Amu
+bLQMW7rIoXGEfVT+xZz6sgjqZIntV6SEGPnfLoE5ZJrIpVYh5Hhwi1q2JIw4rdRK
+Dp6g/wF2ZdYqTZUBXwitv1aNwwNGX3RmZoQjBjBAo3iREJ3eVcUW/5xbAoGAMIW0
+KjITzxzqwA2Je9qrvz5pwBIZXtj/GKtEquOVZppjLYHwLwnDgiev8oPFlsWfUeuY
+QGiCO8FtqUSTs+u0aL4rxAC4ZEX8WV/lWA61fFi56JsG7K3HZfAPge0xevXEJrx1
+QQ+fgnxISI6OZv8Ud7o8gZy5xclulQmyDqZfWsECgYBy1mb46kHnmIkNJW5xGxua
+crt4ySWlNFcXZR3zUs7K3Ha4kGkltzoHVm3IirTii44IW2xksMhlTM5spzsu1sAp
+ctWG1D823DuovFNPuU97pIPOKMjw8JeRRi8tBk00jtCSAhzEfaiEKWxK+Vm8iVt3
+Wl1uXfnHy9RVEJxtO/0Mqg==
+-----END PRIVATE KEY-----"
+
+# JWT Configuration (Legacy - for backward compatibility)
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production-256-bits-long
+JWT_EXPIRES_IN=24h
+JWT_REFRESH_SECRET=your-super-secret-refresh-key-change-this-in-production-256-bits-long
+JWT_REFRESH_EXPIRES_IN=7d
+
+# Security Settings
+BCRYPT_ROUNDS=12
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX_REQUESTS=100
+
+# ========================================
+# IMPORTANT NOTES:
+# ========================================
+# 1. DATABASE_URL will be automatically provided by Railway when you add PostgreSQL
+# 2. After deploying to Vercel, update CORS_ORIGIN with your actual Vercel URL
+# 3. You can generate stronger JWT secrets using: openssl rand -base64 32
+# ========================================

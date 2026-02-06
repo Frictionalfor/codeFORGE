@@ -1,0 +1,28 @@
+# ========================================
+# VERCEL FRONTEND ENVIRONMENT VARIABLES
+# ========================================
+# Copy these variables to Vercel Dashboard:
+# 1. Go to your Vercel project
+# 2. Go to "Settings" → "Environment Variables"
+# 3. Add each variable below one by one
+# OR use the bulk import feature
+# ========================================
+
+# API Configuration - Your Railway Backend URL
+VITE_API_BASE_URL=https://codeforge-backend-production-f678.up.railway.app/api
+
+# Firebase Configuration
+VITE_FIREBASE_API_KEY=AIzaSyAndwvK5KutvLnqKpM0hyrVn5qxOto6mhc
+VITE_FIREBASE_AUTH_DOMAIN=codeforge-5e078.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=codeforge-5e078
+VITE_FIREBASE_STORAGE_BUCKET=codeforge-5e078.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=492814148350
+VITE_FIREBASE_APP_ID=1:492814148350:web:a8f8a0c4bda091f513bbaf
+
+# ========================================
+# IMPORTANT NOTES:
+# ========================================
+# 1. After deploying backend to Railway, update VITE_API_BASE_URL with your Railway URL
+# 2. Make sure to add these variables for "Production" environment in Vercel
+# 3. After adding variables, redeploy your Vercel app for changes to take effect
+# ========================================

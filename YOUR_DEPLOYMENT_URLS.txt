@@ -1,0 +1,27 @@
+# ========================================
+# YOUR DEPLOYMENT URLS
+# ========================================
+
+# Railway Backend URL (CONFIRMED ✅)
+RAILWAY_URL=https://codeforge-backend-production-f678.up.railway.app
+
+# Vercel Frontend URL (Update this after deploying to Vercel)
+VERCEL_URL=https://your-app-name.vercel.app
+
+# ========================================
+# IMPORTANT NEXT STEPS:
+# ========================================
+
+# 1. Deploy to Vercel using VERCEL_ENV_VARIABLES.txt
+#    (The file already has your Railway URL configured!)
+
+# 2. After Vercel deployment, copy your Vercel URL
+
+# 3. Go back to Railway and update this variable:
+#    CORS_ORIGIN=https://your-vercel-url.vercel.app
+
+# 4. Go to Firebase Console and add authorized domains:
+#    - codeforge-backend-production-f678.up.railway.app
+#    - your-vercel-url.vercel.app
+
+# ========================================
