@@ -9,7 +9,7 @@
 # ========================================
 
 # API Configuration - Your Railway Backend URL
-VITE_API_BASE_URL=https://codeforge-backend-production-f678.up.railway.app/api
+VITE_API_BASE_URL=https://codeforge-backend-production-083a.up.railway.app/api
 
 # Firebase Configuration
 VITE_FIREBASE_API_KEY=AIzaSyAndwvK5KutvLnqKpM0hyrVn5qxOto6mhc

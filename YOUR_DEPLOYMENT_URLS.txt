@@ -2,8 +2,8 @@
 # YOUR DEPLOYMENT URLS
 # ========================================
 
-# Railway Backend URL (CONFIRMED ✅)
-RAILWAY_URL=https://codeforge-backend-production-f678.up.railway.app
+# Railway Backend URL (CONFIRMED)
+RAILWAY_URL=https://codeforge-backend-production-083a.up.railway.app
 
 # Vercel Frontend URL (Update this after deploying to Vercel)
 VERCEL_URL=https://your-app-name.vercel.app
