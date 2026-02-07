@@ -467,6 +467,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       const updatedUser: ExtendedFirebaseUser = {
         ...firebaseUser,
         profile: profile,
+        hasSelectedRole: true
+      };
+      
       setUser(updatedUser);
       console.log('🎉 Role selection completed successfully! User is now:', profile.role);
       
