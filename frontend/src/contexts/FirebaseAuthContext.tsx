@@ -467,21 +467,19 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       const updatedUser: ExtendedFirebaseUser = {
         ...firebaseUser,
         profile: profile,
-        hasSelectedRole: true
-      };
-      
       setUser(updatedUser);
       console.log('🎉 Role selection completed successfully! User is now:', profile.role);
       
       // Force a small delay to ensure state updates are processed
-      await new Promise(resolve => setTimeout(resolve, 100));
+      await new Promise(resolve => setTimeout(resolve, 200));
       
-      // Redirect to dashboard after role selection
+      // Redirect to dashboard after role selection - use full page reload to ensure state is fresh
       console.log('🔄 Redirecting to dashboard after role selection');
-      window.location.href = '/dashboard';
+      window.location.replace('/dashboard');
       
     } catch (error) {
       console.error('❌ Error in selectRole:', error);
+      setLoading(false); // Make sure to reset loading state on error
       
       // Handle specific error cases
       if (error instanceof Error) {

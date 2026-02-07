@@ -30,11 +30,16 @@ export const RoleSelection: React.FC<RoleSelectionProps> = ({ onRoleSelected, lo
       
       await onRoleSelected(selectedRole);
       console.log('✅ Role selection completed successfully');
+      
+      // Keep the submitting state active during redirect
+      // The page will reload, so this state won't be visible for long
+      
     } catch (error) {
       console.error('❌ Error selecting role:', error);
       
       // Reset submission state on error so user can try again
       setHasSubmitted(false);
+      setSubmitting(false);
       
       // Show user-friendly error message
       if (error instanceof Error) {
@@ -47,8 +52,6 @@ export const RoleSelection: React.FC<RoleSelectionProps> = ({ onRoleSelected, lo
       } else {
         alert('Failed to select role. Please try again.');
       }
-      
-      setSubmitting(false);
     }
   };
 
